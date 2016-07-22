@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>my homepage</title>
+</head>
+<script>
+function submitfunction()
+{
+var x=document.forms["login"]["username"].value
+var y=document.forms["login"]["pwd"].value
+if(x==null||x==""||y==null||y=="")
+{
+alert("both fields cant be empty");
+}
+else
+{
+if(x=="preethi")
+{
+if(y=="12345")
+{
+alert("login successfull");
+}
+else{
+alert("password do not match");
+}
+}
+else{
+alert("user dosent exit");
+}
+}
+}
+
+</script>
+<body>
+<div align="center">
+<h1>login<h1>
+<form name="login" onsubmit="submitfunction()">
+	 
+
+	username:<input type="text" name="username"><br><br>
+
+	password:<input type="password" name="pwd"><br><br>
+
+<input type="submit"  value="submit">
+ </form>
+</body>
