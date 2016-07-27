@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>
+registration successfull
+</title>
+<script>
+function regis()
+{	
+if(document.led.name.value==""||document.led.phonenumber.value==""||document.led.email.value==""||document.led.address.value=="")
+{
+	alert("enter the all fields");
+	return false;
+
+}
+else
+{
+if(document.led.name.value=="Lakshmi preethi")
+{
+if(document.led.phonenumber.value=="9940090967")
+{
+if(document.led.email.value=="tk_preethi@yhaoo.com")
+{
+if(document.led.address.value=="fanpet chennai")
+{
+	alert("registration successfull");
+	return true;
+}
+}
+}
+}
+}
+}
+</script>
+<div align="center">
+<h1> registration form</h1>
+</head>
+<body>
+<form name="led" method="post" action="new.html" onsubmit="return(regis());"><br>
+	Name:<input type="text" name="Name"><br>
+	phonenumber:<input type="number" name="phonenumber"><br>
+	email:<input type="email" name="email"><br>
+	address:<input type="text" name="address" row="4"><br>
+	<input type="submit" value="submit"><br>	
+</form>
+</body>
+</html>
